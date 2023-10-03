@@ -2,9 +2,9 @@ services:
   frontend:
     build:
       context: .
-    container_name: members_card
+    container_name: members_card_testing
     ports:
-      - "8000:80"
+      - "8004:80"
     volumes:
       - ./members_card/static:/home/www-data/app/static:ro
       - ./members_card/api:/home/www-data/app/api:ro
