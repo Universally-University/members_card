@@ -6,11 +6,11 @@ services:
     ports:
       - "8004:80"
     volumes:
-      - ./members_card/static:/home/www-data/app/static:ro
-      - ./members_card/api:/home/www-data/app/api:ro
-      - ./members_card/frontend:/home/www-data/app/frontend:ro
-      - ./members_card/members_card:/home/www-data/app/members_card:ro
-      - ./members_card/templates:/home/www-data/app/templates:ro
+      - ./members_card/static:/home/www-data/app/static
+      - ./members_card/api:/home/www-data/app/api
+      - ./members_card/frontend:/home/www-data/app/frontend
+      - ./members_card/members_card:/home/www-data/app/members_card
+      - ./members_card/templates:/home/www-data/app/templates
     environment:
       - NAME='Room Booking' # Pretty Name
       - APPNAME=members_card # Django project name. The folder name that contains the wsgi.py file.
